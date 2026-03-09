@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import Container from "./Container";
+import Images from "./Images";
 
 const Navbar = () => {
   return (
-    <div>
-        <h1 className='py-4 text-center bg-rose-500 text-white head_35_bold'>This is Navbar Component</h1>
-    </div>
-  )
-}
+    <nav>
+      <Container>
+        <div>
+          <div>
+            <Images />
+          </div>
+        </div>
+      </Container>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

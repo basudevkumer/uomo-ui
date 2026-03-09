@@ -6,6 +6,7 @@ import Shop from "@/page/Shop";
 import Cart from "./component/Cart";
 import Shopsingle from "./page/Shopsingle";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
