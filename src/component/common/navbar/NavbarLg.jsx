@@ -8,7 +8,6 @@ import allIcons from "@/helper/iconProvider";
 import NavDownImg from "@/assets/images/nav-dropImage.png";
 import Button from "../Button";
 import Login from "../../auth/Login";
-import Register from "../../auth/Register";
 import AddToCart from "../../shopMain/addToCart/AddToCart";
 import NavTabs from "../../navtabs/NavTabs";
 
@@ -22,7 +21,6 @@ const NavbarLg = () => {
   const [hoverItems, setHoverITems] = useState(null);
   const [open, setIsOpen] = useState(null);
 
-
   //  for handle evetnt
 
   const handleclicked = (id) => {
@@ -35,16 +33,19 @@ const NavbarLg = () => {
   };
 
   return (
-    <nav className="pt-[29px] pb-[19px] relative !z-[999]">
+    <nav className="pt-7.25 pb-4.75 relative z-999!">
       <Container>
         <div className="flex justify-between">
-          <div className="flex  items-center  gap-x-[56px] ">
-            <Images
-              imgSrc={navLogo}
-              imgAlt={navLogo}
-              className={"w-[111px] h-[27px]"}
-            />
-            <ul className=" flex gap-x-[37px] ">
+          <div className="flex  items-center  gap-x-14 ">
+            <Link to={"/"}>
+              {" "}
+              <Images
+                imgSrc={navLogo}
+                imgAlt={navLogo}
+                className={"w-27.75 h-6.75"}
+              />
+            </Link>
+            <ul className=" flex gap-x-9.25 ">
               {navItems.map((items, index) => {
                 return (
                   <li
@@ -55,7 +56,7 @@ const NavbarLg = () => {
                   >
                     <Link
                       to={items.path}
-                      className="texts_14_medium text-head relative  after:absolute after:content-[''] after:w-[0%] after:h-[1.5px] after:bg-head after:bottom-[19px] after:left-0 hover:after:w-[60%]  after:duration-500 after:ease-in-out   pb-6 "
+                      className="texts_14_medium text-head relative  after:absolute after:content-[''] after:w-[0%] after:h-[1.5px] after:bg-head after:bottom-4.75 after:left-0 hover:after:w-[60%]  after:duration-500 after:ease-in-out   pb-6 "
                     >
                       {items.label}
                     </Link>
@@ -64,9 +65,9 @@ const NavbarLg = () => {
                     {items.hasMegaMenu &&
                       hoverItems === items.label &&
                       hoverItems === "SHOP" && (
-                        <div className=" bg-white absolute w-full top-[100%] shadow-[0_10px_25px_-10px_rgba(0,0,0,0.18)] left-0 ">
+                        <div className=" bg-white absolute w-full top-full shadow-[0_10px_25px_-10px_rgba(0,0,0,0.18)] left-0 ">
                           <Container>
-                            <div className="  border-t border-footer pt-[40px] pb-[44px] grid grid-cols-12 ">
+                            <div className="  border-t border-footer pt-10 pb-11 grid grid-cols-12 ">
                               <div className="col-span-9 grid grid-cols-6">
                                 <div>
                                   <div className="">
