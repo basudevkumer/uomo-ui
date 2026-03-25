@@ -28,12 +28,12 @@ const brands = [
 
 const About = () => {
   return (
-    <section className="mt-15 lg:mt-22.5">
-      <div className="max-w-353.25mx-auto">
-        <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-16 xl:mt-22.5 mb-10 sm:mb-12 lg:mb-16 xl:mb-19.25">
+    <section className="mt-22.5">
+      <div className="max-w-[1413px] mx-auto">
+        <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-16 xl:mt-[90px] mb-10 sm:mb-12 lg:mb-16 xl:mb-[77px]">
 
           {/* Page Title */}
-          <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-0 xl:ml-60.5 mb-5 sm:mb-6 lg:mb-7 xl:mb-8">
+          <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-0 xl:ml-[242px] mb-5 sm:mb-6 lg:mb-7 xl:mb-8">
             <h1 className="head_35_bold text-2xl sm:text-3xl lg:text-[30px] xl:text-[35px]">ABOUT UOMO</h1>
           </div>
 
