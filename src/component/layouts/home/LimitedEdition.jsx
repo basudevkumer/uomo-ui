@@ -8,7 +8,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import allIcons from "@/helper/iconProvider";
 import useAllProductThirty from "@/coustomHook/useAllProductThirty";
-import ProductSkeleton from "@/component/common/ProductSkeleton";
+import ProductSkeleton from "@/component/common/skeleton/ProductSkeleton";
 
 const LimitedEdition = () => {
   const { chevron } = allIcons;
