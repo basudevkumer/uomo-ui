@@ -377,20 +377,18 @@ input:focus-visible {
 
 /* for scrollbar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 6px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-
 
 * {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
-
 
 .dashed-border {
   border: none;
@@ -656,3 +654,17 @@ input:focus-visible {
 }
 
 /* Terms & Conditions */
+
+/*  for all section common skeleton */
+@theme {
+  --animate-shimmer: shimmer 1.5s linear infinite;
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

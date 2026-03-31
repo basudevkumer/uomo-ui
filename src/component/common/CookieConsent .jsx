@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CookieConsent = () => {
+const CookieConsent= () => {
   const [visible, setVisible] = useState(true);
 
   if (!visible) return null;
