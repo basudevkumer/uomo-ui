@@ -23,8 +23,7 @@ const Product = ({
   );
 
   const handleWishlist = () => {
-    console.log("clicked, id:", id);
-    console.log("isLiked:", isLiked);
+
 
     if (isLiked) {
       removeFromWishlist(id);
@@ -36,9 +35,9 @@ const Product = ({
         category: catagory,
         thumbnail: imgSrc,
       };
-      console.log("adding to wishlist:", itemToAdd); // ← এটা দেখুন
+     
       addToWishlist(itemToAdd);
-      console.log("added!"); // ← এটা print হচ্ছে?
+       
     }
   };
 

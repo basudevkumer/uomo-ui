@@ -16,7 +16,7 @@ import useCartStore from "@/store/cartSlice";
 
 const Top = ({ product }) => {
   // for manage state
-  let [count, setCount] = useState(3);
+  let [count, setCount] = useState(1);
   const [open, isOpen] = useState(false);
 
   // for zustand state
@@ -34,7 +34,7 @@ const Top = ({ product }) => {
   };
 
   const handleMinus = () => {
-    if (count > 0) {
+    if (count > 1) {
       setCount(count - 1);
     }
   };
