@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
-  { label: "MY ACCOUNT",      path: "/dashboard" },
+  { label: "DASHBOARD",       path: "/dashboard", heading: "MY ACCOUNT" },
   { label: "ORDERS",          path: "order" },
   { label: "DOWNLOADS",       path: "downloads" },
   { label: "ADDRESSES",       path: "address" },
@@ -12,7 +12,7 @@ const menuItems = [
 
 const getHeading = (pathname) => {
   const matched = menuItems.find((item) => pathname.endsWith(item.path));
-  return matched ? matched.label : "My Account";
+  return matched ? (matched.heading || matched.label) : "My Account";
 };
 
 const DashborardItems = ({ onClose }) => {
